@@ -1,1 +1,51 @@
 // Navigation code here
+nav{
+ 
+ width:100%;
+  .wrap();
+ .justify(space-evenly,center);
+
+ padding:20px 0;
+.nav-base(@nav-bg,@nav-border);
+
+animation-name: nav-color;
+animation-duration: 4s;
+ @keyframes nav-color {
+  0%   {background-color: @nav-bg}
+  25%  {background-color: #dddddd;}
+  50%  {background-color: #bbbbbb;}
+  100% {background-color: #333333;}
+}
+
+ .nav-title{
+  width:100%;
+  
+  font-size:4.3rem;
+  text-align: center;
+
+ }
+ .a-wrapper{
+  margin:20px auto 0;
+  width:100%;
+  text-align: center;
+ 
+  @media @phone{
+   .row-col(@flex,@row);
+   .justify(space-around,center);
+   margin:20px 20px 0;
+   
+ }
+ }
+
+a{
+ @media @phone{
+  margin-right:0;
+ }
+ .nav-elements();
+ 
+ margin-right:40px;
+
+
+
+}
+}
